@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+
+body{
+  background-color: #14213d !important;
+}
+
+#quote-box {
+  margin-top: 150px;
+  height : 20rem;
+  border : 0.25px double #8d99ae;
+  box-shadow: 5px 5px 10px #8d99ae;
+  background-color: #293241;
+  color: #E3E4DB;
+  position: relative;
+}
+
+#text{
+  margin-top: 40px;
+  text-align: center;
+  font-family: 'STIX Two Math', serif;
+}
+
+#author{
+  text-align: end;
+  font-family: 'STIX Two Math', serif;
+}
+
+button{
+  background-color: #E3E4DB !important;
+  width: 5em;
+  margin: 2px;
+  color: #293241 !important; 
+  border: transparent;
+  border-radius: 25px !important;
+}
+
+#new-quote{
+  position: absolute;
+  bottom: 40px;
+  
+}
+
+#tweet-quote{
+  position: absolute;
+  bottom: 40px;
+}
+
+
+a{ 
+  text-decoration: none !important;
+  color: #293241 !important;
+}
+
+
+@keyframes buttHover{
+  0%{
+    background-color: #E3E4DB;
+    color: #293241;
+  }
+  50%{
+    background-color: #293241;
+    color: #E3E4DB;
+  }
+  100%{
+    background-color: #E3E4DB;
+    color: #293241;
+  }
+}
