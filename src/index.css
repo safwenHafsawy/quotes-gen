@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
 
 body{
-  background-color: #14213d !important;
+  background-color: #293241 !important ;
 }
 
+.row{
+  border: 6px double #C2C1A5;
+  margin-top: 150px !important;
+  border-radius: 30px ;
+  padding-bottom: 15px;
+}
 #quote-box {
-  margin-top: 150px;
-  height : 20rem;
-  border : 0.25px double #8d99ae;
-  box-shadow: 5px 5px 10px #8d99ae;
-  background-color: #293241;
-  color: #E3E4DB;
-  position: relative;
+  height : 250px;
+  background-color: #C2C1A5;
+  border-radius: 30px 30px 10px 10px !important;
+  color: #14213d !important;
 }
 
 #text{
@@ -26,43 +29,54 @@ body{
 }
 
 button{
-  background-color: #E3E4DB !important;
-  width: 5em;
-  margin: 2px;
-  color: #293241 !important; 
-  border: transparent;
-  border-radius: 25px !important;
+  background-color: #293241 !important;
+  width: 100%;
+  margin: 5px !important;
+  border: 3px solid #C2C1A5 !important;
+  color: #C2C1A5 !important; 
+  border-radius: 10px !important;
+  font-family: 'STIX Two Math', serif !important;
+  height: 3em;
 }
 
-#new-quote{
-  position: absolute;
-  bottom: 40px;
-  
-}
-
-#tweet-quote{
-  position: absolute;
-  bottom: 40px;
+button:hover{
+  background-color: #C2C1A5 !important;
+  color: #293241 !important;
 }
 
 
 a{ 
   text-decoration: none !important;
+  color: #C2C1A5 !important;
+  font-family: 'STIX Two Math', serif !important;
+}
+
+a:hover{
   color: #293241 !important;
 }
 
 
-@keyframes buttHover{
-  0%{
-    background-color: #E3E4DB;
-    color: #293241;
+@media (max-width : 350px ) and (max-height : 700px) {
+  .row{
+    margin-top: 1px !important;
+    height: 100vh;
+    border-radius: 30px 0px !important;
   }
-  50%{
-    background-color: #293241;
-    color: #E3E4DB;
-  }
-  100%{
-    background-color: #E3E4DB;
-    color: #293241;
+  #quote-box{
+    border-radius: 30px 0px !important;
+    height: 80vh;
   }
 }
+
+@media (max-width : 400px ) and (min-height : 480px) and (max-height : 600px){
+  .row{
+    margin-top: 1px !important;
+    height: 100vh;
+  }
+  #quote-box{
+    height: 70vh !important;
+  }
+}
+
+
+
